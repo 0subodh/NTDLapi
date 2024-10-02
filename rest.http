@@ -9,7 +9,8 @@ POST  {{baseUrl}}
 Content-Type: application/json
 
 {
-  "task": "Cooking",
+  "id": 3,
+  "task": "Seliing",
   "hour": 5
 }
 
@@ -22,9 +23,14 @@ PUT {{baseUrl}}
 Content-Type: application/json
 
 {
-  "task": "Cooking",
-  "hour": 6
+  "id": 1,
+  "hour": 10
 }
 
 ### DELETE the task list
-DELETE  {{baseUrl}}
+DELETE  {{baseUrl}}/1
+Content-Type: application/json
+
+{
+  "id": 1
+}
