@@ -8,7 +8,7 @@ app.use(morgan("tiny"));
 
 const PORT = 8000;
 
-app.use("/", taskRouter);
+app.use("/api/v1/tasks", taskRouter);
 
 app.listen(PORT, (error) => {
   error ? console.log(error) : console.log(`Server running at port ${PORT}`);

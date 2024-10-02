@@ -10,13 +10,16 @@ Content-Type: application/json
 
 {
   "id": 3,
-  "task": "Seliing",
+  "task": "Selling",
   "hour": 5
 }
 
 ### GET the task list
 GET {{baseUrl}}
 
+
+### GET the task list
+GET {{baseUrl}}/singleTask?id=2
 
 ### UPDATE the task list
 PUT {{baseUrl}}
